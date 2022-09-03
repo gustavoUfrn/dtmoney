@@ -3,7 +3,7 @@ import outcomeImg from '../../assets/outcome.svg';
 import totalImg from '../../assets/total.svg';
 
 import { Container } from './styles';
-export function Summary(){
+export function Summary() {
 	return (
 		<Container>
 			<div>
@@ -20,7 +20,7 @@ export function Summary(){
 				</header>
 				<strong>-R$500,00</strong>
 			</div>
-			<div>
+			<div className="highlight-background">
 				<header>
 					<p>Total</p>
 					<img src={totalImg} alt="Total" />
