@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./styles";
 
-intertface Transaction {
+interface Transaction {
 	id: number;
 	title: string;
 	amount: number;
@@ -46,7 +46,7 @@ export function TransactionsTable() {
 								<td>
 									{new Intl.DateTimeFormat('pt-BR').format(
 										new Date(transaction.createdAt)
-										)}
+									)}
 								</td>
 							</tr>
 						)
